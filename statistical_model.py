@@ -19,7 +19,6 @@ def clean_text(txt):
         
         return s    
 
-
 def stem(word):
     """this function remove endings of the words and return stem/root of the word """
     if word == '':
