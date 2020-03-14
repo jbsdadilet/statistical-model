@@ -1,5 +1,4 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+
 """
 Created on Mon Nov 25 17:24:50 2019
 
@@ -93,6 +92,7 @@ class TextModel:
     
     def __repr__(self):
         """Return a string representation of the TextModel."""
+
         s = 'text model name: ' + self.name + '\n'
         s += '  number of words: ' + str(len(self.words)) + '\n'
         s += '  number of word lengths: ' + str(len(self.word_lengths)) +"\n"
@@ -153,6 +153,7 @@ class TextModel:
     
         
     def add_file(self, filename):
+
         """method open the file and add the file to model, creating words and word_lengths dictionaries"""
         
         # open and read the text file and send to helper function to add the strings 
@@ -165,6 +166,7 @@ class TextModel:
         
         
     def save_model(self):
+        
         """the method create five files and write the dictionary content into file """
         
         filename1 = str(self.name) + '_' + 'words'
